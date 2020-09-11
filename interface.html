@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+</head>
+<body>
+	<form>
+		<p>Usename</p>
+		<input type="type" id="usename"><br>
+		<p>Password</p>
+		<input type="password" id="password"><br><br>
+		<button onclick="c()">Login</button>
+	</form>
+	<script>
+		function c(){
+			let use = document.getElementById("usename").value;
+			let pass = document.getElementById("password").value;
+			//alert(pass)
+			if (use==="admin") {
+				if (pass==="themaster"){
+					alert("Welcome!");
+				}else {
+					if (pass === "") {
+						alert("Canceled!");
+					} else {
+						alert("I don't know you!");
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
